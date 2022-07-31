@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+	
+<struts>
+	
+	<package name="default" extends="struts-default">
+		<action name="AddBook" class="pakages.AddBook">
+			<result name="response">response.jsp</result>
+		</action>
+		
+		<action name="Adduser" class="pakages.AddUser">
+			<result name="response">response.jsp</result>
+		</action>
+		
+		<action name="Allocatebook" class="pakages.Allocatebook">
+			<result name="response">response.jsp</result>
+		</action>
+		
+		<action name="Bookreturn" class="pakages.Bookreturn">
+			<result name="submissionok">index.jsp</result>
+			<result name="response">response.jsp</result>
+		</action>
+		
+	</package>
+</struts>
